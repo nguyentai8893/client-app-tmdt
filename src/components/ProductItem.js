@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 const ProductItem = ({ item }) => {
 	const dispatch = useDispatch();
-	// sử lý show modal
+
 	const handlerPopup = () => {
 		dispatch(popupAction.showPopup(item));
 	};
