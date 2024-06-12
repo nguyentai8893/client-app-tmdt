@@ -26,7 +26,7 @@ const CartPage = () => {
 	const dispatch = useDispatch();
 	const cartStateRedux = useSelector((state) => state.product.cartState);
 	const { apiRequest } = useAxios();
-	// Lấy dữ liệu từ local storage và chuyển thành mảng
+
 	const storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 	const cartState =
 		cartStateRedux.length > 0 ? cartStateRedux : storedCartItems;
