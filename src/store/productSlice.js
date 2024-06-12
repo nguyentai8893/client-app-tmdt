@@ -1,5 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
+<<<<<<< HEAD
 // khai báo  initialState
+=======
+>>>>>>> 010606e (oknha)
 const initialState = {
 	currentCategory: 'All',
 	products: [],
