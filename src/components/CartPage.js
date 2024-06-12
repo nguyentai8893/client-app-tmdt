@@ -61,7 +61,6 @@ const CartPage = () => {
 		handleDebounceUpdateQuantity(product.idProduct, product.idUser, totalQTT);
 	};
 
-	// xóa sản phẩm khỏi cart
 	const handlerRemove = async (id) => {
 		try {
 			const res = await apiRequest(
