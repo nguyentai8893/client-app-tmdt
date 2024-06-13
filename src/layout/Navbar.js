@@ -27,11 +27,9 @@ const Navbar = () => {
 	// }
 
 	const navigate = useNavigate();
-	// const [isLoggein, setIsLoggedIn] = useState(false);
 	useEffect(() => {
 		const storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-		// setCartItems(storedCartItems);
-		const user = JSON.parse(localStorage.getItem('user')) || [];
+		const user = JSON.parse(localStorage.getItem('user'));
 		if (user) {
 			setUser(user);
 		}
@@ -46,7 +44,6 @@ const Navbar = () => {
 				'user=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=yourdomain.com';
 			dispatch(loginAction.onLogout());
 			dispatch(productAction.ressetState());
-			// setIsLoggedIn(false);
 			navigate('/sign-up');
 		}
 	};
